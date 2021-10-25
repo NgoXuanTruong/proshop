@@ -1,0 +1,29 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MEAN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NgoXuanTruong/proshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NgoXuanTruong/proshop/issues"
+  },
+  "homepage": "https://github.com/NgoXuanTruong/proshop#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
